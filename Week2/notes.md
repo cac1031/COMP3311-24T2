@@ -2,10 +2,10 @@
 
 ## Setting Up PostgreSQL Server
 
-### Full Guide is in [Prac Exercise 2](https://cgi.cse.unsw.edu.au/~cs3311/24T1/pracs/01/index.php)
+### Full Guide is in [Prac Exercise 1](https://cgi.cse.unsw.edu.au/~cs3311/24T2/pracs/01/index.php)
 
 ### Getting started with vsdb2
-- From VSCode: `ssh YourZid@nw-syd-vxdb2`
+- From VLab: `ssh YourZid@nw-syd-vxdb2`
   - `cd /localstorage/$USER` ← navigate to your directory
 - From VSCode (ssh): `ssh YourZID@d2.cse.unsw.edu.au` OR make a new client to connect to d2 locally
   - host is `d2.cse.unsw.edu.au`

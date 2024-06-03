@@ -5,7 +5,7 @@
 
 
 ## Questions
-- ER Warmup Ques: Q7, 6
+- ER Warmup Ques: Q7
 - Relational Schema: Q17, 18
 - Constructing an ER Diagram (Simple) - Q11
 - Constructing an ER Diagram (Hard) - Q12, 13, 14, 15
@@ -15,10 +15,6 @@
 ### Q7
 **Draw an ER diagram for the following application from the manufacturing industry:**\
 Done in class
-
-### Q17
-**Why are duplicate tuples not allowed in relations?**\
-Not that it is not allowed, but tuples are always seen collectively as sets.
 
 ### Q18
 **Consider the following simple relational schema:**
@@ -41,5 +37,5 @@ S(1, 1, y) Yes
 ```
 
 ### Q11
-**Give an ER design for a database recording information about teams, players, and their fans, including:**\
+**Give an ER design for a database recording information about teams, players, and their fans**\
 Done in class
