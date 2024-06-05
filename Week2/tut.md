@@ -6,9 +6,9 @@
 
 ## Questions
 - ER Warmup Ques: Q7
-- Relational Schema: Q17, 18
+- Relational Schema: Q18
 - Constructing an ER Diagram (Simple) - Q11
-- Constructing an ER Diagram (Hard) - Q12, 13, 14, 15
+- Constructing an ER Diagram (Hard) - Q14, 15
 - Extra ER Cardinality Prac [if time permits] - Q9
 
 
@@ -28,12 +28,13 @@ S(b1, b2, b3)
 R(1, a, b, c) Yes
 R(2, a, b, c) Yes
 R(1, x, y, z) No
-R(3, x, NULL, y) Yes
+R(3, x, NULL, y) Yes 
 R(NULL, x, y, z) No
 S(1, 2, x) Yes
 S(1, NULL, y) No
 S(2, 1, z) Yes
 S(1, 1, y) Yes
+S(2, 2, x) Yes
 ```
 
 ### Q11
