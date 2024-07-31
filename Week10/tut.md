@@ -273,8 +273,8 @@ part   cost
 ## Then, we project only the 1.part column as it is associated with the part with the lesser cost
 ### Suppose we have a table where there are more then two unique costs present, e.g. $100, $200, $300
 ### Since using cross product generates every possible pair to compare cost to, we can be assured that
-### if we filter out rows where 1.cost < 2.cost, we will never be having the part with the most expensive part in the result set
-### This is essential as we can use the set difference operation to then get the most expensive parts
+### if we filter out rows where 1.cost < 2.cost, we will never be having the part with the most expensive cost in the immediate result set
+### This is essential because we can use the set difference operation to then get the most expensive parts
 part [This is Table 1]
 ----
 300
