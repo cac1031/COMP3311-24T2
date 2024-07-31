@@ -176,7 +176,7 @@ sid
 ```
 <br>
 
-**f. Find the sids of suppliers who supply every part.**
+**e. Find the sids of suppliers who supply every part.**
 ```
 This is division
 1. Find all parts ID
@@ -216,6 +216,15 @@ The first step is to simply find the parts supplied by Yosemite Sham and each of
 
 YSParts = Proj[part,cost](Sel[sname='Yosemite Sham'](Suppliers Join[suppliers.sid = catalog.supplier] Catalog))
 ⇒ if the above looks too nested, the sub-operations are basically a Join → Selection → Projection
+
+1. Join Suppliers and Catalog table
+SuppAndCatalog = Suppliers Join[suppliers.sid = catalog.supplier] Catalog
+
+2. Filter Rows where sname = 'Yosemite Sham'
+YSPartsAllCols = Sel[sname='Yosemite Sham'](SuppAndCatalog)
+
+3. Choose the part id and cost column
+YSParts = Proj[part,cost](YSPartsAllCols)
 
 ########################################
 # Now the challenge is to find the max #
@@ -261,7 +270,11 @@ part   cost
 300        10      100       20
 300        10      200       20
 
-## Then, we project only the 1.part column
+## Then, we project only the 1.part column as it is associated with the part with the lesser cost
+### Suppose we have a table where there are more then two unique costs present, e.g. $100, $200, $300
+### Since using cross product generates every possible pair to compare cost to, we can be assured that
+### if we filter out rows where 1.cost < 2.cost, we will never be having the part with the most expensive part in the result set
+### This is essential as we can use the set difference operation to then get the most expensive parts
 part [This is Table 1]
 ----
 300
